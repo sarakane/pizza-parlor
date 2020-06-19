@@ -19,6 +19,11 @@ body {
   margin-bottom: 3%;
 }
 
+.equal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .btn {
   margin-bottom: 2%;
 }
