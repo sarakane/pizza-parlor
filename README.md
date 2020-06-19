@@ -1,11 +1,18 @@
 # _Pizza Parlor_
 
-#### _JavaScript/jQuery Exercise for Epicodus, 2020.06.19_
+#### _JavaScript/jQuery Exercise for [Epicodus](https://www.epicodus.com/), 2020.06.19_
 
 #### By **Sara Kane**
 
 ## Description
-This is an exercise for [Epicodus](https://www.epicodus.com/).  
+This project is a fake website for a pizza company. It allows a user to select a pizza size and toppings and then order the pizza to see the final price.
+
+## Specifications
+| Behavior                                                                                                          | Input                          | Output                   |
+|-------------------------------------------------------------------------------------------------------------------|--------------------------------|--------------------------|
+| The program has a pizza object constructor with properties for toppings and size                                  |                                | pizza object constructor |
+| The pizza object constructor has a prototype method to calculate the cost of pizza                                | pizza toppings and size        | price of pizza           |
+| The program has a form that gathers the customer's input for toppings and size and shows the cost to the customer | "pepperoni,olives, size large" | "$25"                    |
 
 ## Known Bugs
 * No known bugs.   
