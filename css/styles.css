@@ -1,3 +1,24 @@
+body {
+  background-color: wheat;
+}
 .order {
   display: none;
+}
+
+.jumbotron {
+  text-align: center;
+  background-image: url("../img/pizza.jpg");
+  background-size: 100%;
+  background-position: center;
+  color: white;
+}
+
+#order-col, #selection-col {
+  border: thin solid black;
+  background-color: white;
+  margin-bottom: 3%;
+}
+
+.btn {
+  margin-bottom: 2%;
 }
