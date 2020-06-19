@@ -20,5 +20,15 @@ Pizza.prototype.price = function() {
 
 //UI Logic
 $(document).ready(function(){
-
+  $("form#pizzaForm").submit(function(event){
+    event.preventDefault();
+    const pizzaSizeInput = $("input:radio[name=pizzaSize]:checked").val();
+    const toppingsInput = [];
+    $("input:checkbox[name=toppings]:checked").each(function() {
+      const myTopping = $(this).val();
+      toppingsInput.push(myTopping);
+    });
+    const pizza = new Pizza(toppingsInput, pizzaSizeInput);
+    console.log(pizza);
+  });
 });
