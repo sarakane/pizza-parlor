@@ -43,8 +43,16 @@
           <input type="checkbox" name="toppings" value="sunDriedTomatoes">Sun Dried Tomatoes<br>
           <input type="checkbox" name="toppings" value="tomatoes">Tomatoes<br>
         </div>
-        <button type="submit">Order!</button>
+        <button type="submit" class="btn btn-default">Order!</button>
       </form>
+      <div class="output">
+        <h2>Your order:</h2>
+        <ul>
+          <li>Pizza Size: <span id="sizeSelection"></span></li>
+        </ul>
+        Total cost: <span id="total"></span>
+      </div>
+      <button class="btn btn-success">Confirm order</button>
     </div>
   </body>
 </html>
