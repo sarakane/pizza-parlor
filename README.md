@@ -18,8 +18,22 @@ This project is a fake website for a pizza company. It allows a user to select a
 * No known bugs.   
 
 ## Setup/Installation Requirements
-* Clone this repository from GitHub.
-* Open the index.html file with your preffered browser to view the website, or use a code editor to view the code.
+#### View Online
+Visit the GitHub Pages by clicking on the following link or by typing it in your web browser <https://sarakane.github.io/pizza-parlor/>
+
+#### View locally
+To clone this repository from your command line you will need [Git](https://git-scm.com/) installed. First navigate in the command line to where you want to clone this repository. 
+
+Example:  
+```
+$ cd ~/Desktop
+```
+
+Then from your command line:
+```
+$ git clone https://github.com/sarakane/pizza-parlor
+```
+Once the repository has been cloned, you can open index.html in your preferred web browser to view the site or open in your preferred code editor to view and edit the code.
 
 ## Technologies Used
 * Visual Studio Code (code editor)
