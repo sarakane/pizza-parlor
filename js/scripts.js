@@ -29,6 +29,14 @@ $(document).ready(function(){
       toppingsInput.push(myTopping);
     });
     const pizza = new Pizza(toppingsInput, pizzaSizeInput);
-    console.log(pizza);
+    $(".order").show();
+    $(".order ul").empty();
+    $(".order ul").append("<li>Pizza size: "+pizzaSizeInput+"</li>");
+    for (const top of toppingsInput) {
+      let returnTop = top.replace(/([a-z])([A-Z])/g, '$1 $2');
+      returnTop = returnTop[0].toUpperCase() + returnTop.slice(1);
+      $(".order ul").append("<li>Topping: "+returnTop+"</li>");
+    }
+    $("#total").text("$"+pizza.price());
   });
 });
