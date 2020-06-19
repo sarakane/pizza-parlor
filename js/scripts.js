@@ -22,7 +22,6 @@ Pizza.prototype.price = function() {
 $(document).ready(function(){
   $("#order-section").hide();
   $("#start-button").click(function(event){
-    event.preventDefault();
     $("#welcome-section").hide();
     $("#order-section").css("display", "flex");
   });
@@ -36,6 +35,7 @@ $(document).ready(function(){
       toppingsInput.push(myTopping);
     });
     const pizza = new Pizza(toppingsInput, pizzaSizeInput);
+    $("#add-to-cart").hide();
     $(".order").show();
     $(".order ul").empty();
     $(".order ul").append("<li>Pizza size: "+pizzaSizeInput+"</li>");
@@ -45,5 +45,19 @@ $(document).ready(function(){
       $(".order ul").append("<li>Topping: "+returnTop+"</li>");
     }
     $("#total").text("$"+pizza.price());
+  });
+
+  $("#edit").click(function() {
+    $("#add-to-cart").show();
+    $(".order").hide();
+  });
+  $("#confirm").click(function() {
+    $("#pizzaForm").trigger("reset");
+    $("#order-section").hide();
+    $("#confirmation").show();
+  });
+  $("#new-order").click(function() {
+    $("#confirmation").hide();
+    $("#welcome-section").show();
   });
 });
