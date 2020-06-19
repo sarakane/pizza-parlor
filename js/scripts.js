@@ -20,6 +20,13 @@ Pizza.prototype.price = function() {
 
 //UI Logic
 $(document).ready(function(){
+  $("#order-section").hide();
+  $("#start-button").click(function(event){
+    event.preventDefault();
+    $("#welcome-section").hide();
+    $("#order-section").css("display", "flex");
+  });
+
   $("form#pizzaForm").submit(function(event){
     event.preventDefault();
     const pizzaSizeInput = $("input:radio[name=pizzaSize]:checked").val();

@@ -13,16 +13,18 @@ body {
   color: white;
 }
 
-#order-col, #selection-col {
+#pizza-selection, #order-display {
   border: thin solid black;
+  border-radius: 5px;
   background-color: white;
   margin-bottom: 3%;
 }
 
-.equal {
-  display: flex;
+#order-section {
+  display: none;
   flex-wrap: wrap;
 }
+
 
 .btn {
   margin-bottom: 2%;
